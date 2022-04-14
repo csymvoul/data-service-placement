@@ -2,7 +2,7 @@ import networkx as nx
 
 """
 Node specification
-    The Node class specifies a set of attributes that an edge node has.
+    The Node class specifies a set of attributes that a node has.
 """
 class Node:
     def __init__(self, lat:float, lon:float, response_time:int = 5, max_users:int = 10000) -> None:
