@@ -38,7 +38,7 @@ print("Adjacency view: ", G.adj)
 Plots.plot_graph(G)
 
 #%%
-from users import User
+from user import User
 
 user = User("15234")
 user.get_id()
