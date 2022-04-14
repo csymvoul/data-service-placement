@@ -1,7 +1,7 @@
 #%%
 
 import networkx as nx
-from plots import plot_graph
+from plots import Plots
 
 # Creation of an empty graph
 G = nx.Graph()
@@ -35,7 +35,7 @@ print("Adjacency view: ", G.adj)
 #%%
 # Plot graph
 # print_me()
-plot_graph(G)
+Plots.plot_graph(G)
 
 #%%
 from users import User
