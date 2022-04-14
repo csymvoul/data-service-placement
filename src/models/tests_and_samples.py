@@ -34,6 +34,7 @@ print("Adjacency view: ", G.adj)
 
 #%%
 # Plot graph
+# print_me()
 plot_graph(G)
 
 #%%
