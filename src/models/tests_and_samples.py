@@ -45,4 +45,5 @@ user.get_id()
 user.set_visited_node("A")
 user.set_visited_node("B")
 user.get_visited_nodes()
+
 # %%
