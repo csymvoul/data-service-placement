@@ -5,7 +5,7 @@ import os
 
 class Plots:
     @staticmethod
-    def plot_graph(G: nx.Graph()) -> None:
+    def plot_graph(G: nx.Graph) -> None:
         nx.draw(G, with_labels=True, font_weight='bold', node_color='red')
         plt.savefig("../figures/graph.png")
         plt.show()
