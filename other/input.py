@@ -2,8 +2,8 @@
 # from constants import *
 from cloud import *
 
-number_of_user = 200 #average number of user in the system
-number_of_cloudlet = 9 #number of cloudlet 
+number_of_user = 2000 #average number of user in the system - initial was 20
+number_of_cloudlet = 500 #number of cloudlet - initial was 9
 per = 50 #pourcentage between 1-99 to compute sigma
 cloudlet_capacity = 10000#cloudlet capacity in Mips
 
@@ -29,7 +29,10 @@ time_user_ap = 10 #ms
 routing_switching = 0.2 #ms
 time_processing = 2 #ms serving cloudlet processing
 
-cloud = Cloud(number_of_user,number_of_cloudlet,open_algorithm,level_workload,per,cloudlet_capacity,opening_strategy,server_critiria_selection,time_node,time_user_ap,routing_switching,time_processing,graph_type,upper_util,lower_util,quotas,cloudlet_to_open,max_utilization)
+cloud = Cloud(number_of_user,number_of_cloudlet,open_algorithm,level_workload,per,
+              cloudlet_capacity,opening_strategy,server_critiria_selection,time_node,
+              time_user_ap,routing_switching,time_processing,graph_type,upper_util,lower_util,
+              quotas,cloudlet_to_open,max_utilization)
 cloud.start()
 print(cloud)
 #%%
