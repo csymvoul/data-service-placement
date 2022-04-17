@@ -2,8 +2,8 @@
 # from constants import *
 from cloud import *
 
-number_of_user = 2000 #average number of user in the system - initial was 20
-number_of_cloudlet = 500 #number of cloudlet - initial was 9
+number_of_user = 3000 #average number of user in the system - initial was 20
+number_of_cloudlet = 50 #number of cloudlet - initial was 9
 per = 50 #pourcentage between 1-99 to compute sigma
 cloudlet_capacity = 10000#cloudlet capacity in Mips
 
