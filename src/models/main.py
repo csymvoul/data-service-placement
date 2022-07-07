@@ -29,10 +29,22 @@ class Simulation:
 
     def start_simulation():
         """
-            options: 
+            Options / Actions in the system: 
                 - place data
                 - retrieve data 
                 - move user 
+            
+            Scenarios: 
+                - start with the creation of an edge network constituting of 50 edge servers with the following characteristics:
+                    - cpu cores range: [2, 16]
+                    - memory range: [4, 64]
+                    - storage (capacity) range: [500, 3000]
+                    - connection type: *TBD*
+                - create clusters of edge nodes, based on adjacency, that are comprised of maximum 10 nodes (at least 5 regions will be created)
+                - insert XXX users with a variating number of data 
+                    - each data will have a data size: [1, 500]
+                - mobility: 
+                    - 
         """
         pass
 
