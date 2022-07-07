@@ -7,6 +7,7 @@ class User:
         self.id = id
         self.visited_nodes = []
         self.is_static = False
+        self.optimal_node_id = -1 # If optimal_node_id == 1, it is not yet set
     
     def set_id(self, id:str) -> None:
         self.id = id
@@ -25,3 +26,11 @@ class User:
 
     def is_static(self) -> bool:
         return self.is_static
+    
+    def set_optimal_node_id(self, optimal_node_id) -> None:
+        self.optimal_node_id = optimal_node_id
+    
+    def get_optimal_node_id(self) -> int: # may be a str as well
+        return self.optimal_node_id
+    
+    # Add data to the user
