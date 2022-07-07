@@ -43,6 +43,9 @@ class Simulation:
                     - memory range: [4, 64]
                     - storage (capacity) range: [500, 3000]
                     - connection type: *TBD*
+                    - edges with the following characteristics: 
+                        - distance: calculated using the (lat,long) of the two nodes
+                        - latency: would be in the this space [1, 10] - the greater the distance, the bigger the probability that latency will be higher
                 - create clusters of edge nodes, based on adjacency, that are comprised of maximum 10 nodes (at least 5 regions will be created)
                 - insert XXX users with the following characteristics 
                     - each data will have a data size: [1, 500]
