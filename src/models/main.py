@@ -31,20 +31,35 @@ class Simulation:
         """
             Options / Actions in the system: 
                 - place data
+                    - including information about the size of the data placed
                 - retrieve data 
+                    - including information about the size of the data retrieved
                 - move user 
             
-            Scenarios: 
+            Scenario description: 
                 - start with the creation of an edge network constituting of 50 edge servers with the following characteristics:
+                    - lat, lon
                     - cpu cores range: [2, 16]
                     - memory range: [4, 64]
                     - storage (capacity) range: [500, 3000]
                     - connection type: *TBD*
                 - create clusters of edge nodes, based on adjacency, that are comprised of maximum 10 nodes (at least 5 regions will be created)
-                - insert XXX users with a variating number of data 
+                - insert XXX users with the following characteristics 
                     - each data will have a data size: [1, 500]
+                    - probability of movement: 
+                        - cluster 1: for 70% of the total users the movement probability should be 0 (stay in the same node)
+                        - for 30% of the total users the movement probability should be 1:
+                            - cluster 2: out of those, 80% will have a high movement, i.e., they will travel in nodes out of their region 
+                            - cluster 3: the remaining 20% will travel accross their own region
                 - mobility: 
-                    - 
+                    - cluster 1 will be static users
+                    - cluster 2 will be mobile users
+                    - cluster 3 will be static users
+                        - for those users, the most used node will be identified as the optimal node
+                - data to keep for each user: 
+                    - list of visited nodes including the location of the nodes
+                    - data sizes exchanged
+                    - type of action (place or retrieval)
         """
         pass
 
