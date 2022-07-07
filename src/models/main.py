@@ -73,8 +73,7 @@ class Simulation:
                     - list of visited nodes including the location of the nodes
                     - edges between the nodes and their info (latency, distance, etc.)
                     - data sizes exchanged
-                    - type of action (place or retrieval)
-                
+                    - type of action (place or retrieval)               
         """
         pass
 
