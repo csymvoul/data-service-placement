@@ -6,6 +6,7 @@ Node specification
 """
 class Node:
     def __init__(self, 
+                id:int,
                 lat:float, 
                 lon:float, 
                 response_time:int = 5, 
@@ -13,6 +14,7 @@ class Node:
                 cpu_cores:int = 2, 
                 memory:int = 8, 
                 capacity:int = 500) -> None:
+        self.id = id
         self.lat = lat
         self.long = lon
         self.response_time = response_time
@@ -21,6 +23,9 @@ class Node:
         self.memory = memory
         self.capacity = capacity
 
+    def get_id(self) -> int: 
+        return self.id
+    
     def set_lan(self, lan:int) -> None:
         self.lan = lan
 
