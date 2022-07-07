@@ -103,7 +103,7 @@ class Simulation:
         return self.disk_range   
 
     def set_mobility_probability(self, mobility_probability) -> None:
-        self.disk_range = disk_range
+        self.mobility_probability = mobility_probability
 
     def get_mobility_probability(self) -> float:
         return self.mobility_probability
