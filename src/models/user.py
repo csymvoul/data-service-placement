@@ -33,4 +33,4 @@ class User:
     def get_optimal_node_id(self) -> int: # may be a str as well
         return self.optimal_node_id
     
-    # Add data to the user
+    # We need to add data to the user
