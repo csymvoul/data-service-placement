@@ -10,7 +10,15 @@ Graph Creation file
 """
 
 class Simulation: 
-    def __init__(self, nr_users, nr_edges, nr_nodes, cpu_range, mem_range, disk_range, mobility_probability, network_type) -> None:
+    def __init__(self, 
+                 nr_users, 
+                 nr_edges, 
+                 nr_nodes, 
+                 cpu_range, 
+                 mem_range, 
+                 disk_range, 
+                 mobility_probability, 
+                 network_type) -> None:
         self.number_of_users = nr_users
         self.number_of_edges = nr_edges
         self.number_of_nodes = nr_nodes
