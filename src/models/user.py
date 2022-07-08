@@ -21,13 +21,13 @@ class User:
     def get_visited_nodes(self) -> list:
         return self.visited_nodes
 
-    def set_static(self, is_static) -> None:
+    def set_static(self, is_static:bool) -> None:
         self.is_static = is_static
 
     def is_static(self) -> bool:
         return self.is_static
     
-    def set_optimal_node_id(self, optimal_node_id) -> None:
+    def set_optimal_node_id(self, optimal_node_id:int) -> None:
         self.optimal_node_id = optimal_node_id
     
     def get_optimal_node_id(self) -> int: # may be a str as well
