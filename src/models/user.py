@@ -3,7 +3,7 @@ User specification
     The User class specifies a set of attributes that a user has.
 """
 class User:
-    def __init__(self, id) -> None:
+    def __init__(self, id:int) -> None:
         self.id = id
         self.visited_nodes = []
         self.is_static = False
