@@ -124,3 +124,4 @@ class Simulation:
 
     def get_network_type(self) -> str:
         return self.network_type
+# %%
